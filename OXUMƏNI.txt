@@ -1,0 +1,44 @@
+BAZA — YEKUN VERSİYA. İSTİFADƏ QAYDASI
+═══════════════════════════════════════
+
+1) İLK İŞ — ÜNVANI YAZ:
+   gen.py faylını aç, ən yuxarıda:
+       SITE_URL = "https://SENIN-ADIN.github.io"
+   Bunu öz real GitHub Pages ünvanınla əvəz et (sonda / olmasın),
+   sonra terminalda: python3 gen.py
+   Bütün səhifələr, sitemap.xml və robots.txt düzgün ünvanla yenidən yaranacaq.
+   (Python yoxdursa: ünvanı mənə — Claude-a — de, hazır paketi verim.)
+
+2) GITHUB-A YÜKLƏ:
+   Bu qovluqdakı BÜTÜN faylları (html + sitemap.xml + robots.txt)
+   repozitoriyana yüklə → Commit changes. Köhnə faylların üstünə yazılacaq.
+
+3) GOOGLE-A TƏQDİM ET (bir dəfəlik, 10 dəqiqə):
+   - search.google.com/search-console → saytını əlavə et, təsdiqlə.
+   - Sol menyuda "Sitemaps" → "sitemap.xml" yaz → Submit.
+   - Bitdi. İndekslənmə 1-4 həftə çəkir. İlk axtarış trafiki 2-3 aya görünür.
+
+─────────────────────────────
+YENİ MƏQALƏ ƏLAVƏ ETMƏK
+─────────────────────────────
+Ya gen.py-də "A = [" siyahısında mövcud blokdan birini kopyalayıb
+dəyiş və python3 gen.py işə sal — ya da gen.py-ni Claude-a atıb
+"bu mövzuları əlavə et" de. HTML fayllara heç vaxt əl ilə toxunma:
+hər şey generatordan doğulur.
+
+─────────────────────────────
+SEO — NƏ EDİLİB
+─────────────────────────────
+- Hər məqalə ayrıca səhifə, başlığı axtarış dilində: "Entropiya nədir? — Baza"
+- Hər səhifədə meta description, canonical, Open Graph teqləri
+- sitemap.xml (bütün səhifələrin xəritəsi) + robots.txt
+- Semantik struktur: məqalə adı h1-dədir
+
+Bundan sonra SEO-nu böyüdən yalnız iki şey var: MƏQALƏ SAYI və VAXT.
+
+─────────────────────────────
+PRİNSİPLƏR
+─────────────────────────────
+- Bəzək yoxdur. Mətn, mənbə, keçid.
+- Hər məqalənin ən azı 2 əlaqəli keçidi olsun.
+- HTML-i əl ilə düzəltmə, gen.py-ni düzəlt.
